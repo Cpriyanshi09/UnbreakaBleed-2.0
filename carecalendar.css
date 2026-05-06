@@ -1,0 +1,79 @@
+body{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 50px;
+}
+
+/* navigation bar */
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: #B42041;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(238, 242, 245);
+    position: fixed;   
+    top: 0;           
+    left: 0;
+    z-index: 1000; 
+}
+
+/* project title */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.title img{
+    height: 30px;
+    width: 30px;
+    font-size: 2px;
+}
+
+/* other page titles in navigation bar */
+.nav_options{
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.options i{
+    margin: 4px;
+}
+
+.options a{
+    text-decoration: none;
+    color: rgb(238, 242, 245);
+}
+
+/* sign in button */
+.navbar button{
+    width: 70px;
+    height: 25px;
+    color: rgb(238, 242, 245);
+    color: #B42041;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.main_content{
+    margin: 80px 80px 0px 80px;
+    background-color: #B42041;
+    border-radius: 30px;
+    width: 1077px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+}

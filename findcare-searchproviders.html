@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find care near you</title>
+    <link rel="stylesheet" href="findcare-searchproviders.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Lora:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="title">
+            <img src="logo.png">
+            <h3>UnbreakaBleed</h3>
+        </div>
+        <div class="nav_options">
+            <div class="options">
+                <i class="fa-solid fa-house"></i>
+                <a href="http://127.0.0.1:5500/home_page.html">Home</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-shield"></i>
+                <a href="http://127.0.0.1:5500/awareness.html">Awareness</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-circle-info"></i>
+                <a href="#">Help Hub</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-square-check"></i>
+                <a href="http://127.0.0.1:5500/symptom-checker.html">Symptom Checker</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-users"></i>
+                <a href="http://127.0.0.1:5500/SurvivorStories.html">Survivor Stories</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-calendar"></i>
+                <a href="#">Care Calendar</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="http://127.0.0.1:5500/findcare-searchproviders.html">Find Care</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-comments"></i>
+                <a href="http://127.0.0.1:5500/carebot.html">Care Bot</a>
+            </div>
+        </div>
+        <button id="SignInPage"><b>Sign In</b></button>
+    </div>
+    <!-- main content that doesnt change -->
+    <div class="main_content">
+        <div class="first_line">
+            <div class="first_line_content">
+                <i class="fa-solid fa-location-dot"></i>            
+                <p>Care near you</p>
+            </div>
+        </div>
+        <h1>Find Quality Healthcare Providers</h1>
+        <p style="margin: 0px 80px 0px 80px;">Locate trusted doctors, testing labs and medical facilities near you. For rural areas, we suggest the nearest quality care in nearby towns or cities.</p>
+        <div class="find_care_perks">
+             <div class="perks">
+                <div><i class="fa-solid fa-magnifying-glass-location"></i></div>
+                <h4 style="margin-bottom: 10px;">Location-Based</h4>
+                <span style="font-size: 14px;">Find providers near your location</span>
+            </div>
+            <div class="perks">
+                <div><i class="fa-solid fa-star"></i></div>
+                <h4 style="margin-bottom: 10px;">Verified Quality</h4>
+                <span style="font-size: 14px;">Pre-screened and trusted providers</span>
+            </div>
+            <div class="perks">
+                <div><i class="fa-solid fa-clock"></i></div>
+                <h4 style="margin-bottom: 10px;">Real-Time Info</h4>
+                <span style="font-size: 14px;">Up-to-date contact and availability</span>
+            </div>
+        </div>
+     </div>
+     <div class="emergency_and_support">
+        <h3 style=" margin-top: 30px;">Emergency and Support Contacts</h3>
+        <div class="contact_boxes">
+            <div class="boxes">
+                <h6>Emergency</h6>
+                <h4 style="margin: 0px;">Emergency Services</h4>
+                <div class="contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5 style="margin-left: 6px;">911</h5>
+                </div>
+                <span>For immediate medical emergencies</span>
+            </div>
+            <div class="boxes">
+                <h6>Information</h6>
+                <h4 style="margin: 0px;">Cancer Information Service</h4>
+                <div class="contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5 style="margin-left: 6px;">911</h5>
+                </div>
+                <span>For immediate medical emergencies</span>
+            </div>
+            <div class="boxes">
+                <h6>Support</h6>
+                <h4 style="margin: 0px;">Indian Cancer Society</h4>
+                <div class="contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5 style="margin-left: 6px;">911</h5>
+                </div>
+                <span>For immediate medical emergencies</span>
+            </div>
+        </div>
+     </div>
+     <!-- the four options below -->
+     <div class="four_options">
+        <div class="opt1"><a href="http://127.0.0.1:5500/findcare-searchproviders.html">Search Providers</a></div>
+        <div class="rest_opt"><a href="http://127.0.0.1:5500/findcare-mapview.html">Map View</a></div>
+        <div class="rest_opt"><a href="http://127.0.0.1:5500/findcare-emergencyinfo.html">Emergency Info</a></div>
+     </div>
+     <!-- content for the search provider page -->
+     <div class="search_providers">
+        <div class="search_coulumn">
+            <h3>Find Healthcare Providers</h3>
+            <div class="search_options">
+                <div class="search_bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Enter City or Postal Code">
+                </div>
+                <select>
+                    <option value="All Types">All Types</option>
+                </select>
+                <select>
+                    <option value="All Specialities">All Specialities</option>
+                </select>
+                <button><i class="fa-solid fa-location-arrow"></i>Use My Location</button>
+            </div>
+        </div>
+        <div class="search_filter">
+            <h3 style="margin-left: 20px;">Healthcare Providers (0)</h3>
+            <div class="filter">
+                <i class="fa-solid fa-filter"></i>
+                <div style="margin: 0px 20px 0px 5px;">Sorted by distance</div>
+            </div>
+        </div>
+        <!-- search result section -->
+        <div class="search_result">
+            <div class="result_box"></div>
+        </div>
+     </div>
+     <!-- footer -->
+     <footer>
+        <h1>Can't Find What Your Looking For?</h1>
+        <p>Our expert team can find specialized care or providers in your area. </p>
+        <div class="more_services">
+            <button id="Check_your_symptoms2" style="margin-right: 5px;"><i class="fa-solid fa-phone"></i>Contact Support</button>
+            <button style="margin-left: 5px;"><i class="fa-solid fa-globe"></i>Request Provider Addition</button>
+        </div>
+        <div class="additional_links">
+            <ul><h5>Quick Links</h5>
+                <li><a href="http://127.0.0.1:5500/awareness.html">Awareness</a></li>
+                <li><a href="http://127.0.0.1:5500/symptom-checker.html">Symptom Checker</a></li>
+                <li><a href="#">Help Hub</a></li>
+            </ul>
+            <ul><h5>Support</h5>
+                <li><a href="http://127.0.0.1:5500/SurvivorStories.html">Survivor Stories</a></li>
+                <li><a href="http://127.0.0.1:5500/findcare-searchproviders.html">Find Care</a></li>
+                <li><a href="#">Care Calender</a></li>
+            </ul>
+            <ul><h5>Emergency</h5>
+                <li><a href="#">24/7 Helpline</a></li>
+                <li><a href="#">1-800-BREAST</a></li>
+                <li><a href="#">Crisis Support Avaiiable</a></li>
+            </ul>
+        </div>
+        <div class="title" style="margin: 40px 0px 0px 0px;">
+            <i class="fa-solid fa-heart" style="margin-right: 3px; font-size: 12px;"></i>
+            <h5 style="margin: 0px; font-size: 12px">UnbreakaBleed</h5>
+        </div>
+        <p style="line-height: 2px; font-size: 12px;">Empowering women with breast cancer awarness, support and resources for early detection and care. </p>
+        <div class="copyright">
+            <i class="fa-regular fa-copyright"></i>
+            <p>2025 UnbreakaBleed. All rights reserved | Privacy Policy | Terms of service</p>
+        </div>
+     </footer>
+     <script src="checkyoursymptoms.js"></script>
+</body>
+</html>

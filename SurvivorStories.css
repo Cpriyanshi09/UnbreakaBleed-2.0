@@ -1,0 +1,263 @@
+body{
+    margin: 0px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 50px;
+}
+
+/* navigation bar */
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: #B42041;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-radius: 10px; */
+    color: rgb(238, 242, 245);
+    position: fixed;   
+    top: 0;           
+    left: 0;
+    z-index: 1000; 
+}
+
+/* project title */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.title img{
+    height: 30px;
+    width: 30px;
+    font-size: 2px;
+}
+
+/* other page titles in navigation bar */
+.nav_options{
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.options i{
+    margin: 4px;
+}
+
+.options a{
+    text-decoration: none;
+    color: rgb(238, 242, 245);
+}
+
+/* sign in button */
+.navbar button{
+    width: 70px;
+    height: 25px;
+    color: rgb(238, 242, 245);
+    color: #B42041;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* main content that doesnt change */
+.main_content{
+    text-align: center;
+    color: #B42041;
+    margin-top: 60px;
+    height: 300px;
+    border-bottom: 0.5px solid #B42041;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.first_line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first_line_content{
+    height: 20px;
+    width: 170px;
+    border-radius: 5px;
+    display: flex;
+    border: 2px solid #B42041;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.first_line_content i{
+    margin: 3px;
+}
+
+/* content for survivor story page */
+.category{
+    text-align: center;
+    color: rgb(238, 242, 245);
+    margin: 80px 100px 80px 100px;
+    height: 20px;
+    background-color: #B42041;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: #B42041;
+    margin: 0px 100px 80px 100px;
+}
+
+.category_type{
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #B42041;
+    border-left: 0.5px solid #B42041;
+    border-top: 0.5px solid #B42041;
+    width: 200px;
+    padding: 10px;
+    height: 70px;
+}
+
+.category_type i{
+    margin-top: 10px;
+}
+
+.category_type h4{
+    height: 20px;
+    margin: 10px 0px 0px 0px;
+}
+
+.category_type a{
+    text-decoration: none;
+    color: #B42041;
+}
+
+.category_type a:hover{
+    text-decoration: underline;
+}
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+    width: 1077px;
+    margin: 0px 100px 60px 100px;
+}
+.video{
+    text-align: center;
+    color: #B42041;
+    margin: 40px 60px 80px 60px;
+    border-radius: 20px;
+    height: 600px;
+    width: 450px;
+    border-left: 0.5px solid rgb(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 5px rgb(0, 0, 0, 0.2);
+}
+
+.video iframe{
+    height: 300px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.video .personal_info{
+    height: 100px;
+    /* border: 2px solid black; */
+    text-align: left;
+}
+
+.video h6{
+    margin: 0px;
+    padding: 10px;
+    color: grey;
+}
+
+.video h4{
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.video .discription{
+    padding: 10px;
+    text-align: left;
+    /* border: 2px solid black; */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* footer */
+footer{
+    background-color: #B42041;
+    width: 100%;
+    text-align: center;
+    color: rgb(238, 242, 245);
+    padding: 20px 0px 10px 0px;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+
+.more_services button{
+    border-radius: 5px;
+    height: 35px;
+    width: 250px;
+    font-size: 14px;
+    background-color: #B42041;
+    color: rgb(238, 242, 245);
+    border: 1px solid rgb(238, 242, 245);
+}
+
+.more_services button:hover{
+    background-color: rgb(238, 242, 245);
+    color: #B42041;
+    border: 1px solid #B42041;
+}
+
+.more_services button i{
+    margin-right: 8px;
+}
+
+.additional_links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.additional_links ul{
+    list-style-type: none;
+}
+
+.additional_links a{
+    text-decoration: none;
+    color: rgb(238, 242, 245);
+    font-size: 12px;
+}
+
+.additional_links a:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 1077px;
+    margin: 25px 80px 0px 80px;
+    border-top: 0.5px solid rgb(238, 242, 245, 0.3);
+}

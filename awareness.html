@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awareness</title>
+    <link rel="stylesheet" href="awareness.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Lora:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="title">
+            <img src="logo.png">
+            <h3>UnbreakaBleed</h3>
+        </div>
+        <div class="nav_options">
+            <div class="options">
+                <i class="fa-solid fa-house"></i>
+                <a href="http://127.0.0.1:5500/home_page.html">Home</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-shield"></i>
+                <a href="http://127.0.0.1:5500/awareness.html">Awareness</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-circle-info"></i>
+                <a href="#">Help Hub</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-square-check"></i>
+                <a href="http://127.0.0.1:5500/symptom-checker.html">Symptom Checker</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-users"></i>
+                <a href="http://127.0.0.1:5500/SurvivorStories.html">Survivor Stories</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-calendar"></i>
+                <a href="#">Care Calendar</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="http://127.0.0.1:5500/findcare-searchproviders.html">Find Care</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-comments"></i>
+                <a href="http://127.0.0.1:5500/carebot.html">Care Bot</a>
+            </div>
+        </div>
+        <button id="SignInPage"><b>Sign In</b></button>
+    </div>
+    <!-- centre text and buttons -->
+    <div class="main_content">
+        <div class="first_line">
+            <div class="first_line_content">
+                <i class="fa-solid fa-shield-heart"></i>            
+                <p>Breast Cancer Awareness</p>
+            </div>
+        </div>
+        <h1>Knowledge is Your Fist Line of Defence</h1>
+        <p>Learn about Breast Cancer symptoms, risk factors, and prevention strategies. Early detection saves lives.</p>
+        <div class="activities">
+            <button id="Check_your_symptoms1" class="button2">Check Your symptoms</button>
+            <button class="button2">Set Screening Reminders</button>
+        </div>
+        <div class="breast_cancer">
+            <h3 id="bc-title" style="color:rgb(67, 0, 67);">What is Breast Cancer?</h3>
+            <p id="bc-text">Cancer happens when the cancerous cells grows and multiplies and becomes tumors. Similarly, in breast cancer cancerous cells multiplies proliferately in breast tissues and forms tumors. Mostly women of age 50 or older are the most prone to be affected by breast cancer. Having said that, it can affect women lesser than age 50 as well. Breast cancer doesn't just happen in women as everyone is born with some breast tissue, thus anybody can be affected with breast cancer. Finding the cancer earlier makes it much more likely that the cancer can be cured.</p>
+        </div>
+        <div class="breast_cancer_types">
+            <h3 id="bc-types" style="margin-top: 40px; color:rgb(67, 0, 67)">Types of Breast Cancer</h3>
+            <p id="bc-types-para">There are majorly 13 types of breast cancer. They are classified on the basis of:</p>
+            <div  id="bc-types-content" class="basis">
+                <div class="classification">Origin</div>
+                <div class="classification">Special Forms</div>
+                <div class="classification">Receptor Status</div>
+            </div>
+            <div id="bc-types-info">
+                <div class="info">
+                    1. Invasive Ductal Carcinoma (IDC)
+                    <br> <br> ->The most common type (70–80%).
+                    <br> ->It starts in the milk ducts and multiplies in the surrounding breast tissue.
+                    <br> ->It can spread to lymph nodes or other parts of the body as well.<br> <br>
+                    2. Ductal Carcinoma in Situ (DCIS)
+                    <br> <br> ->It usually is non-invasive in nature, however, can be invasive if not treated.
+                    <br> ->These are abnormal cells in the ducts but has not invaded in rest of the body/ outside body. <br> <br>
+                    3. Invasive Lobular Carcinoma (ILC)
+                    <br> <br> ->It is second most invasive breast cancer in nature.
+                    <br> ->It begins in the milk producing glands, also called lobules.
+                    <br> -> It may not be detected by mammogram as well. <br> <br>
+                    4. Lobular Carcinoma in Situ (LCIS)
+                    <br> <br> ->It is not true type of cancer, but is an abnormal growth in the milk producing glands.
+                    <br> ->It increases the future risk of developing breast cancer in both the breasts.
+                </div>
+                <div class="info">
+                    1. Inflammatory Breast Cancer (IBC)
+                    <br> <br> ->It is aggressive in nature,where cancer cells blocks the lymph vessels in the skin.
+                    <br> ->It causes redness, swelling, warmth, orange peel-like texture (peau d’orange).
+                    <br> ->It is inavsive in nature. <br> <br>
+                    2. Paget’s Disease of the Breast
+                    <br> <br> ->It is a rare cancer which starts in milk ducts, and spreads to nipple/areola skin.
+                    <br> ->It causes itching, redness, flaking skin, discharge around the nipple.
+                    <br> ->It is often linked with DCIS or invasive cancer. <br> <br>
+                    3. Angiosarcoma
+                    <br> <br> ->This type of cancer resides in the blood or lymph vessels of the breast.
+                    <br> ->It may develop as a primary cancer or secondary (after radiation therapy).
+                    <br> ->It is extremely aggressive. <br> <br>
+                    4. Male Breast Cancer
+                    <br> <br> ->This type of cancer occurs in men (about 1% of all breast cancers).
+                    <br> ->Most of them are invasive ductal carcinomas.
+                    <br> ->These are often diagnosed late because men don’t expect breast cancer. <br> <br>
+                    5. Recurrent Breast Cancer
+                    <br> <br> ->This typer of cancer that comes back after treatment.
+                    <br> ->It can be Local (same breast or scar area), Regional (nearby lymph nodes) or Distant/Metastatic (spread to other organs).
+                </div>
+                <div class="info">
+                    1. Hormone Receptor–Positive (ER+/PR+)
+                    <br> <br> ->The cancer cells grow in response to estrogen (ER) or progesterone (PR).
+                    <br> ->It can be treated with hormone (endocrine) therapy. <br> <br>
+                    2. HER2-Positive Breast Cancer
+                    <br> <br> ->It has too many HER2 proteins on cancer cells, making them grow fast.
+                    <br> ->The targeted therapies (like trastuzumab) are effective. <br> <br>
+                    3. Triple-Negative Breast Cancer (TNBC)
+                    <br> <br> ->It lacks ER, PR, and HER2 receptors.
+                    <br> ->It is pretty aggressive, limited treatment options (mainly chemotherapy, immunotherapy). <br> <br>
+                    4. Metastatic Breast Cancer (Stage 4)
+                    <br> <br> ->This type of cancer can spread beyond the breast to bones, liver, lungs, or brain.
+                    <br> ->It can be considered incurable but treatable for life extension and quality of life.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- the four options below -->
+     <div class="four_options">
+        <div class="rest_opt"><a href="#part1">Symptoms</a></div>
+        <div class="rest_opt"><a href="#part2">Risk Factor</a></div>
+        <div class="rest_opt"><a href="#part3">Prevention</a></div>
+        <div class="rest_opt"><a href="#part4">Resources</a></div>
+     </div>
+     <!-- content for the symptoms page -->
+      <section id="part1">
+             <div class="symptoms">
+        <h2>Recognize the Warning Sign</h2>
+        <p>Being aware of these symptoms can help with early detection. Remember, many of these symptoms can have other causes, but its important to have them checked by a healthcare professional. </p>
+        <div class="alert">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <div><b>Important:</b> If you notice any of these symptoms,espicially those marked as high severity,consult with a healthcare provider promptly. Early detection significantly improves treatment outcomes. </div>
+        </div>
+        <div class="boxes line_1">
+            <div class="box1 box">
+                <div class="priority_line">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h6>High Priority</h6>
+                </div>
+                <h4>Breast Lump or Mass</h4>
+                <span>A new lump or mass in the breast or underarm area</span>
+            </div>
+            <div class="box2 box">
+                <div class="priority_line">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h6>Medium Priority</h6>
+                </div>
+                <h4>Breast Size or Shape Changes</h4>
+                <span>Noticable changes in breast size, shape or appearance</span>
+            </div>
+            <div class="box3 box">
+                <div class="priority_line">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h6>High Priority</h6>
+                </div>
+                <h4>Skin Changes</h4>
+                <span>Dimpling, puckering or orange peel texture of breast skin</span>
+            </div>
+        </div>
+        <div class="boxes line_2">
+            <div class="box4 box">
+                <div class="priority_line">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h6>Medium Priority</h6>
+                </div>
+                <h4>Nipple Changes</h4>
+                <span>Nipple discharge, inversion or usual changes</span>
+            </div>
+            <div class="box5 box">
+                <div class="priority_line">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h6>Low Priority</h6>
+                </div>
+                <h4>Breast Pain</h4>
+                <span>Persistent pain in breast or nipple area</span>
+            </div>
+            <div class="box6 box">
+                <div class="priority_line">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h6>Medium Priority</h6>
+                </div>
+                <h4>Swelling</h4>
+                <span>Swelling in breast, collarbone or armpit area</span>
+            </div>
+        </div>
+     </div>
+    </section>
+    <!-- content for the risk factor page -->
+     <section id="part2">
+        <div class="risk_factor">
+        <h2>Understanding Risk Factors</h2>
+        <p>While having risk factors doesn't mean you'll develop breast cancer, understanding them can help you make informed decisions about your health</p>
+        <div class="categories">
+            <ul><h3>1. Lifestyle-related Risk Factor</h3>
+                <li>Alcohol consumption</li>
+                <li>Obesity, especially after menopause</li>
+                <li>Physical inactivity</li>
+                <li>Smoking or tobacco use</li>
+                <li>Unhealthy diet (high in saturated fats, low in fiber)</li>
+                <li>Long-term night shift work (disruption of circadian rhythm)</li>
+                <li>Exposure to radiation (especially to chest area)</li>
+            </ul>
+            <ul><h3>2. Estrogen-related Risk Factors</h3>
+                <li>Early menarche (before age 12)</li>
+                <li>Late menopause (after age 55)</li>
+                <li>Long-term use of hormone replacement therapy (HRT), especially combined estrogen-progestin therapy</li>
+                <li>Postmenopausal obesity (fat tissue produces estrogen)</li>
+                <li>High lifetime exposure to endogenous estrogen</li>
+            </ul>
+            <ul><h3>3. Reproductive Factors</h3>
+                <li>Late age at first full-term pregnancy (after age 30)</li>
+                <li>Never having children</li>
+                <li>Not breastfeeding or short duration of breastfeeding</li>
+                <li>Use of certain fertility treatments (may increase hormone levels)</li>
+                <li>Shorter duration of pregnancy-free intervals</li>
+            </ul>
+            <ul><h3>4. Family History and Genetic Factors</h3>
+                <li>Family history of breast cancer (especially in a first-degree relative: mother, sister, daughter)</li>
+                <li>Inherited gene mutations - BRCA1 and BRCA2</li>
+                <li>Personal history of breast cancer or other cancers</li>
+            </ul>
+            <ul><h3>5. Aging-Related Risk Factors</h3>
+                <li>Increasing age (most cases occur after age 50)</li>
+                <li>Age-related genetic mutations in breast cells</li>
+                <li>Decline in immune system function with age</li>
+                <li>Cumulative exposure to risk factors over time</li>
+            </ul>
+        </div>
+        <div class="alert">
+            <i class="fa-solid fa-circle-info"></i>
+            <div><b>Remember:</b> Having one or more risk factors doesn't mean you will get breast cancer. Many women with risk factors never develop the disease, while others with no known risk factors do.</div>
+        </div>
+     </div>
+     </section>
+      <!-- content for the prevention page -->
+       <section id="part3">
+        <div class="prevention">
+        <h2>Prevention and Early Detection</h2>
+        <p>While not all breast cancers can be prevented, there are steps you can take to reduce your risk and catch any changes early. </p>
+        <div class="prevention_steps">
+             <div class="steps">
+                <i class="fa-solid fa-heart"></i>
+                <h4>Healthy Lifestyle</h4>
+                <span>Maintain a healthy weight, exercise regularly and limit alcohol consumption.</span>
+            </div>
+            <div class="steps">
+                <i class="fa-solid fa-calendar"></i>
+                <h4>Regular Screenings</h4>
+                <span>Follow recommended mammography schedules and perform monthly self-examinations.</span>
+            </div>
+            <div class="steps">
+                <i class="fa-solid fa-user"></i>
+                <h4>Know Your History</h4>
+                <span>Understand your family history and discuss genetic testing if recommended</span>
+            </div>
+        </div>
+      </div>
+       </section>
+       <!-- content for the resources page -->
+      <section id="part4">
+        <div class="resources">
+        <h2>Recognize the Warning Sign</h2>
+        <p>Being aware of these symptoms can help with early detection. Remember, many of these symptoms can have other causes, but its important to have them checked by a healthcare professional. </p>
+        <div class="cards">
+            <div class="card_no">
+                <div class="card_image" style="background-image: url(resources_img1.jpeg);"></div>
+                <div style="height: 100px;">
+                    <h6>Symptom</h6>
+                    <h4>Understanding Breast Lumps</h4>
+                </div>
+                <div class="card_content">A new lump or mass in breast or underarm is the most common symptom of brast cancer. It may feel hard, have irregular edges, and be painless, tho...</div>
+                <button>
+                    <a href="#">Learn how to perform a self-breast exam</a>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                </button>
+                <div class="card_update">Updated: 20/08/2025</div>
+            </div>
+            <div class="card_no">
+                <div class="card_image" style="background-image: url(resources_img2.jpeg);"></div>
+                <div style="height: 100px;">
+                    <h6>Risk Factor</h6>
+                    <h4>Family History and Breast Cancer Risk</h4>
+                </div>
+                <div class="card_content">Having a close blood relative (mother, sister, daughter) who has had breast cancer, especially at a young age, significantly increases your risk. Gene...</div>
+                <button>
+                    <a href="#">Consult your doctor about your family his</a>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                </button>
+                <div class="card_update">Updated: 20/08/2025</div>
+            </div>
+            <div class="card_no">
+                <div class="card_image" style="background-image: url(resources_img3.jpeg);"></div>
+                <div style="height: 100px;">
+                    <h6>Early Detection</h6>
+                    <h4>The importance of Self-Breast Exams</h4>
+                </div>
+                <div class="card_content">Regular self-breast exams (SBEs) help you become familiar with the normal look and feel of your own breasts, making it easier to notice any changes. While...</div>
+                <button>
+                    <a href="#">Set a reminder in your care calender</a>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                </button>
+                <div class="card_update">Updated: 20/08/2025</div>
+            </div>
+            <div class="card_no">
+                <div class="card_image" style="background-image: url(resources_img4.jpeg);"></div>
+                <div style="height: 100px;">
+                    <h6>Early Detection</h6>
+                    <h4>Why Mammograms Save Lives</h4>
+                </div>
+                <div class="card_content">Mammograms are x-ray images of the breast used to detect breast changes that may be cancerous years before physical symptoms develop. Regular mammograms...</div>
+                <button>
+                    <a href="#">Find a screening center near you</a>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                </button>
+                <div class="card_update">Updated: 20/08/2025</div>
+            </div>
+            <div class="card_no">
+                <div class="card_image" style="background-image: url(resources_img5.jpeg);"></div>
+                <div style="height: 100px;">
+                    <h6>Prevention</h6>
+                    <h4>Lifestyle choices for breast health</h4>
+                </div>
+                <div class="card_content">Maintaining a healthy weight, limiting alcohol intake, eating a balanced diet rich in fruits and vegetables, and engaging in regular physical activity...</div>
+                <button>
+                    <a href="http://127.0.0.1:5500/SurvivorStories.html">Expore our 'Voices of Hope' section</a>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                </button>
+                <div class="card_update">Updated: 20/08/2025</div>
+            </div>
+        </div>
+      </div>
+      </section>
+       <!-- footer -->
+     <footer>
+        <h1>Take Action Today</h1>
+        <p>Knowledge empowers action. Use our tools to assess your symptoms and connect with healthcare providers.</p>
+        <div class="more_services">
+            <button id="Check_your_symptoms2" style="margin-right: 5px;">Check Your symptoms</button>
+            <button style="margin-left: 5px;">Set Screening Reminders</button>
+        </div>
+        <div class="additional_links">
+            <ul><h5>Quick Links</h5>
+                <li><a href="http://127.0.0.1:5500/awareness.html">Awareness</a></li>
+                <li><a href="http://127.0.0.1:5500/symptom-checker.html">Symptom Checker</a></li>
+                <li><a href="#">Help Hub</a></li>
+            </ul>
+            <ul><h5>Support</h5>
+                <li><a href="http://127.0.0.1:5500/SurvivorStories.html">Survivor Stories</a></li>
+                <li><a href="http://127.0.0.1:5500/findcare-searchproviders.html">Find Care</a></li>
+                <li><a href="#">Care Calender</a></li>
+            </ul>
+            <ul><h5>Emergency</h5>
+                <li><a href="#">24/7 Helpline</a></li>
+                <li><a href="#">1-800-BREAST</a></li>
+                <li><a href="#">Crisis Support Avaiiable</a></li>
+            </ul>
+        </div>
+        <div class="title" style="margin: 40px 0px 0px 0px;">
+            <i class="fa-solid fa-heart" style="margin-right: 3px; font-size: 12px;"></i>
+            <h5 style="margin: 0px; font-size: 12px">UnbreakaBleed</h5>
+        </div>
+        <p style="line-height: 2px; font-size: 12px;">Empowering women with breast cancer awarness, support and resources for early detection and care. </p>
+        <div class="copyright">
+            <i class="fa-regular fa-copyright"></i>
+            <p>2025 UnbreakaBleed. All rights reserved | Privacy Policy | Terms of service</p>
+        </div>
+     </footer>
+     <script src="awareness.js"></script>
+</body>
+</html>

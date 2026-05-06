@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker - Check your symptoms here</title>
+    <link rel="stylesheet" href="symptom-checker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Lora:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="title">
+            <img src="logo.png">
+            <h3>UnbreakaBleed</h3>
+        </div>
+        <div class="nav_options">
+            <div class="options">
+                <i class="fa-solid fa-house"></i>
+                <a href="http://127.0.0.1:5500/home_page.html">Home</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-shield"></i>
+                <a href="http://127.0.0.1:5500/awareness.html">Awareness</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-circle-info"></i>
+                <a href="#">Help Hub</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-square-check"></i>
+                <a href="http://127.0.0.1:5500/symptom-checker.html">Symptom Checker</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-users"></i>
+                <a href="http://127.0.0.1:5500/SurvivorStories.html">Survivor Stories</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-calendar"></i>
+                <a href="#">Care Calendar</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="http://127.0.0.1:5500/findcare-searchproviders.html">Find Care</a>
+            </div>
+            <div class="options">
+                <i class="fa-solid fa-comments"></i>
+                <a href="http://127.0.0.1:5500/carebot.html">Care Bot</a>
+            </div>
+        </div>
+        <button id="SignInPage"><b>Sign In</b></button>
+    </div>
+    <!-- centre text and buttons -->
+     <div class="main_content">
+        <div class="first_line">
+            <div class="first_line_content">
+                <i class="fa-solid fa-circle-check"></i>            
+                <p>Interactive Symptom Assessment</p>
+            </div>
+        </div>
+        <h1>Check Yourself - Symptom Checker</h1>
+        <p style="margin: 0px 80px 0px 80px;">Use our interactive tool to assess your symptoms and get a personalized risk estimate. This tool helps you understand when to seek medical attention.</p>
+     </div>
+     <div class="alert">
+        <i class="fa-solid fa-circle-info"></i>
+        <div><b>Important:</b> This tool is for educational purpose only and does not replace proffesional medical advice. Always consult with a healthcare provider for proper diagnosis.</div>
+    </div>
+    <!-- content for symptom-checker -->
+     <div class="symptom_checker_page">
+        <h3>Select any symptoms you are experiencing</h3>
+        <p>Check all symptoms that apply to you. Each symptom contributes to your overall risk assessment.</p>
+        <div class="score_and_count">
+            <div id="symptomCount">Symptoms Selected: 0</div>
+        </div>
+        <div class="checkboxes">
+            <div class="box">
+                <div class="first_line">
+                    <div class="input">
+                        <input type="checkbox" id="box1" data-risk="25">
+                        <h4 style="margin-left: 5px;"><label for="box1">New lump or mass in breast</label></h4>
+                    </div>
+                    <div style="color:grey; font-size: 12px;">Risk Weight</div>
+                </div>
+                <div class="second_line">
+                    <h6>High Priority</h6>
+                    <h6>25%</h6>
+                </div>
+                <div class="explanation">A hard or soft lump that feels different from surrounding tissue</div>    
+            </div>
+
+            <div class="box">
+                <div class="first_line">
+                    <div class="input">
+                        <input type="checkbox" id="box2" data-risk="20">
+                        <h4 style="margin-left: 5px;"><label for="box2">Lump in underarm area</label></h4>
+                    </div>
+                    <div style="color:grey; font-size: 12px;">Risk Weight</div>
+                </div>
+                <div class="second_line">
+                    <h6>High Priority</h6>
+                    <h6>20%</h6>
+                </div>
+                <div class="explanation">Swelling or lump in the armpit or lymph node area</div>    
+            </div>
+
+            <div class="box">
+                <div class="first_line">
+                    <div class="input">
+                        <input type="checkbox" id="box3" data-risk="15">
+                        <h4 style="margin-left: 5px;"><label for="box3">Change in breast size or shape</label></h4>
+                    </div>
+                    <div style="color:grey; font-size: 12px;">Risk Weight</div>
+                </div>
+                <div class="second_line">
+                    <h6>Medium Priority</h6>
+                    <h6>15%</h6>
+                </div>
+                <div class="explanation">Noticeable difference in breast size, shape or symmetry</div>    
+            </div>
+
+            <div class="box">
+                <div class="first_line">
+                    <div class="input">
+                        <input type="checkbox" id="box4" data-risk="18">
+                        <h4 style="margin-left: 5px;"><label for="box4">Skin dimpling or puckering</label></h4>
+                    </div>
+                    <div style="color:grey; font-size: 12px;">Risk Weight</div>
+                </div>
+                <div class="second_line">
+                    <h6>High Priority</h6>
+                    <h6>18%</h6>
+                </div>
+                <div class="explanation">Orange-peel texture or dimpling of breast skin</div>    
+            </div>
+
+            <div class="box">
+                <div class="first_line">
+                    <div class="input">
+                        <input type="checkbox" id="box5" data-risk="12">
+                        <h4 style="margin-left: 5px;"><label for="box5">Nipple discharge</label></h4>
+                    </div>
+                    <div style="color:grey; font-size: 12px;">Risk Weight</div>
+                </div>
+                <div class="second_line">
+                    <h6>Medium Priority</h6>
+                    <h6>12%</h6>
+                </div>
+                <div class="explanation">Unusual discharge from nipple (not during breastfeeding)</div>    
+            </div>
+
+            <div class="box">
+                <div class="first_line">
+                    <div class="input">
+                        <input type="checkbox" id="box6" data-risk="15">
+                        <h4 style="margin-left: 5px;"><label for="box6">Nipple inversion or retraction</label></h4>
+                    </div>
+                    <div style="color:grey; font-size: 12px;">Risk Weight</div>
+                </div>
+                <div class="second_line">
+                    <h6>Medium Priority</h6>
+                    <h6>15%</h6>
+                </div>
+                <div class="explanation">Nipple turning inward or changing position </div>    
+            </div>
+
+            <div class="box">
+                <div class="first_line">
+                    <div class="input">
+                        <input type="checkbox" id="box7" data-risk="8">
+                        <h4 style="margin-left: 5px;"><label for="box7">Persistent breast pain</label></h4>
+                    </div>
+                    <div style="color:grey; font-size: 12px;">Risk Weight</div>
+                </div>
+                <div class="second_line">
+                    <h6>Low Priority</h6>
+                    <h6>8%</h6>
+                </div>
+                <div class="explanation">Ongoing pain in breast or nipple area</div>    
+            </div>
+
+            <div class="box">
+                <div class="first_line">
+                    <div class="input">
+                        <input type="checkbox" id="box8" data-risk="14">
+                        <h4 style="margin-left: 5px;"><label for="box8">Skin redness or warmth</label></h4>
+                    </div>
+                    <div style="color:grey; font-size: 12px;">Risk Weight</div>
+                </div>
+                <div class="second_line">
+                    <h6>Medium Priority</h6>
+                    <h6>14%</h6>
+                </div>
+                <div class="explanation">Red, warm or inflamed breast skin</div>    
+            </div>
+
+            <div class="box">
+                <div class="first_line">
+                    <div class="input">
+                        <input type="checkbox" id="box9" data-risk="12">
+                        <h4 style="margin-left: 5px;"><label for="box9">Breast swelling</label></h4>
+                    </div>
+                    <div style="color:grey; font-size: 12px;">Risk Weight</div>
+                </div>
+                <div class="second_line">
+                    <h6>Medium Priority</h6>
+                    <h6>12%</h6>
+                </div>
+                <div class="explanation">Swelling in part or all of the breast</div>    
+            </div>
+
+            <div class="box">
+                <div class="first_line">
+                    <div class="input">
+                        <input type="checkbox" id="box10" data-risk="10">
+                        <h4 style="margin-left: 5px;"><label for="box10">Skin thickening</label></h4>
+                    </div>
+                    <div style="color:grey; font-size: 12px;">Risk Weight</div>
+                </div>
+                <div class="second_line">
+                    <h6>Medium Priority</h6>
+                    <h6>10%</h6>
+                </div>
+                <div class="explanation">Thickening of breast skin or nipple area</div>    
+            </div>
+        </div>
+        <button class="submit_checkbox" id="submitBtn" disabled>Get my Risk Assessment<i class="fa-solid fa-arrow-right"></i></button>
+        <div id="result" class="result_screen">
+        </div>
+     </div>
+     <!-- footer -->
+     <footer>
+        <h1>Understanding Breast Cancer Symptoms</h1>
+        <p>Early detection is the key to successful treatment. Learn more about breast cancer awareness and prevention strategies.</p>
+        <div class="more_services">
+            <button id="learn_about_symptoms" style="margin-right: 5px;">Learn about symptoms</button>
+            <button style="margin-left: 5px;">Read Survivor Stories</button>
+        </div>
+        <div class="additional_links">
+            <ul><h5>Quick Links</h5>
+                <li><a href="http://127.0.0.1:5500/awareness.html">Awareness</a></li>
+                <li><a href="http://127.0.0.1:5500/symptom-checker.html">Symptom Checker</a></li>
+                <li><a href="#">Help Hub</a></li>
+            </ul>
+            <ul><h5>Support</h5>
+                <li><a href="http://127.0.0.1:5500/SurvivorStories.html">Survivor Stories</a></li>
+                <li><a href="http://127.0.0.1:5500/findcare-searchproviders.html">Find Care</a></li>
+                <li><a href="#">Care Calender</a></li>
+            </ul>
+            <ul><h5>Emergency</h5>
+                <li><a href="#">24/7 Helpline</a></li>
+                <li><a href="#">1-800-BREAST</a></li>
+                <li><a href="#">Crisis Support Avaiiable</a></li>
+            </ul>
+        </div>
+        <div class="title" style="margin: 40px 0px 0px 0px;">
+            <i class="fa-solid fa-heart" style="margin-right: 3px; font-size: 12px;"></i>
+            <h5 style="margin: 0px; font-size: 12px">UnbreakaBleed</h5>
+        </div>
+        <p style="line-height: 2px; font-size: 12px;">Empowering women with breast cancer awarness, support and resources for early detection and care. </p>
+        <div class="copyright">
+            <i class="fa-regular fa-copyright"></i>
+            <p>2025 UnbreakaBleed. All rights reserved | Privacy Policy | Terms of service</p>
+        </div>
+     </footer>
+     <script src="learnaboutsymptoms.js"></script>
+</body>
+</html>
